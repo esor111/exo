@@ -1,0 +1,78 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>map filter reducer</title>
+	</head>
+	<body>
+		<script>
+			// 			const arr = [5, 1, 3, 2, 6];
+
+			// 			//tripe
+			// 			// function findSum() {
+			// 			// 	max = 0;
+			// 			// 	for (i = 0; i < arr.length; i++) {
+			// 			// 		if (arr[i] > max) {
+			// 			// 			max = arr[i];
+			// 			// 		}
+			// 			// 	}
+			// 			// 	return max;
+			// 			// }
+			// 			// console.log(findSum());
+
+			// const reduce = arr.reduce((acc, curr)=>{
+
+			// if(curr > acc){
+			// 	acc= curr
+			// }
+			// return acc
+			// }, 0)
+			// console.log(reduce)
+
+			// const reduce = arr.reduce((acc, curr)=>{
+			// 	return curr = curr+ acc
+			// }, 0)
+
+			// console.log(reduce)
+
+			const user = [
+				{
+					firstname: "ishwor",
+					lastname: "gautam",
+					age: 10,
+				},
+				{
+					firstname: "dipika",
+					lastname: "padkone",
+					age: 40,
+				},
+				{
+					firstname: "esa",
+					lastname: "gupta",
+					age: 10,
+				},
+			];
+
+
+// const output = user.reduce((acc, curr)=>{
+// if(acc[curr.age]){
+// acc[curr.age] =acc[curr.age] + acc[curr.age]
+// }else{
+// 	acc[curr.age] = 1
+// }
+// return acc
+// }, {})
+
+// console.log(output)
+
+const output = user.filter((fill)=>  fill.age <30).map(x=> x.firstname)
+console.log(output)
+
+
+		</script>
+	</body>
+</html>
